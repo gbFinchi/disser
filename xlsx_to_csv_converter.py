@@ -23,5 +23,7 @@ def xlx_dir(path):
                 csv_from_excel(path+'/'+os.path.splitext(file)[0])
 
 #xlx_dir('data/добыча полезныз ископаемых')
-xlx_dir('data/строительство зданий')
+#xlx_dir('data/строительство зданий')
 #csv_from_excel('./data/добыча полезныз ископаемых/Добыча полезный ископаемых_2008')
+
+csv_from_excel('./data/mining/mining_2008')
