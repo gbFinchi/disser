@@ -1,19 +1,12 @@
-import xlrd
-import csv
 import os
-
+import pandas as pd
 
 
 def csv_from_excel(name):
-    wb = xlrd.open_workbook(name+'.xlsx')
-    sh = wb.sheet_by_name('report')
-    your_csv_file = open(name+'.csv', 'w')
-    wr = csv.writer(your_csv_file, quoting=csv.QUOTE_ALL)
+    xl = pd.ExcelFile(name+".xlsx")
+    df = xl.parse('report', skiprows=2)
 
-    for rownum in range(2, sh.nrows):
-        wr.writerow(sh.row_values(rownum))
-
-    your_csv_file.close()
+    df.to_csv(name+'.csv')
 
 
 def xlx_dir(path):
@@ -22,8 +15,6 @@ def xlx_dir(path):
             if os.path.splitext(file)[1] == '.xlsx':
                 csv_from_excel(path+'/'+os.path.splitext(file)[0])
 
-#xlx_dir('data/добыча полезныз ископаемых')
-#xlx_dir('data/строительство зданий')
-#csv_from_excel('./data/добыча полезныз ископаемых/Добыча полезный ископаемых_2008')
+xlx_dir('data/mining')
+xlx_dir('data/building')
 
-csv_from_excel('./data/mining/mining_2008')
