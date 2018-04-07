@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332a46f1-45c8-4884-ac72-9bcc524e25bd" name="Default" comment="csv files">
-      <change beforePath="" afterPath="$PROJECT_DIR$/simple thesis.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/disser.iml" afterPath="$PROJECT_DIR$/.idea/disser.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/building.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/building.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data/mining_2014.xlsx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/financials_maker.py" afterPath="$PROJECT_DIR$/financials_maker.py" />
-      <change beforePath="$PROJECT_DIR$/from_excel.py" afterPath="$PROJECT_DIR$/from_excel.py" />
-      <change beforePath="$PROJECT_DIR$/xlsx_to_csv_converter.py" afterPath="$PROJECT_DIR$/xlsx_to_csv_converter.py" />
       <change beforePath="$PROJECT_DIR$/../myPrj/examples/follow_user_followers.py" afterPath="$PROJECT_DIR$/../myPrj/examples/follow_user_followers.py" />
       <change beforePath="$PROJECT_DIR$/../myPrj/examples/unfollow_everyone.py" afterPath="$PROJECT_DIR$/../myPrj/examples/unfollow_everyone.py" />
       <change beforePath="$PROJECT_DIR$/../myPrj/examples/unfollow_non_followers.py" afterPath="$PROJECT_DIR$/../myPrj/examples/unfollow_non_followers.py" />
@@ -308,6 +304,11 @@
               <item name="disser" type="b2602c69:ProjectViewProjectNode" />
               <item name="disser" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="disser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disser" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -495,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521547688874</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new">
+      <created>1523122560341</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523122560341</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -536,7 +544,8 @@
     <MESSAGE value="test 1" />
     <MESSAGE value="rename converter" />
     <MESSAGE value="csv files" />
-    <option name="LAST_COMMIT_MESSAGE" value="csv files" />
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
