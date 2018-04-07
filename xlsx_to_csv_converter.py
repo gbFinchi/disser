@@ -1,12 +1,19 @@
 import os
 import pandas as pd
+import collections
 
 
 def csv_from_excel(name):
     xl = pd.ExcelFile(name+".xlsx")
-    df = xl.parse('report', skiprows=2)
 
-    df.to_csv(name+'.csv')
+    df = xl.parse('report', skiprows=2)
+    data = df.copy(deep=True)
+
+    data['Дата ликвидации'].fillna('0-0-0', inplace=True)
+    data['Year'] = data['Дата ликвидации'].str.split('-', expand=True)[0].astype(int)
+    f = collections.Counter(data['Year'])
+    print(name,' '.f)
+    #df.to_csv(name+'.csv')
 
 
 def xlx_dir(path):
